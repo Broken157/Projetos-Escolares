@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Postit.css">
+    <title>Post-it App</title>
+</head>
+<body>
+    <div class="background-text">Post-it</div>
+    <div class="container">
+        <h1 class="app-title">Post-it</h1>
+        <div class="button-container">
+            <textarea id="postItText" placeholder="Escreva aqui..." rows="2"></textarea>
+            <button id="newPostIt">Criar Post-it</button>
+            <button id="deleteAllPostIts">🗑️ </button>
+            <button id="instructions">❔</button>
+        </div>
+        <div class="counter" id="postItCounter">
+            Total: <span id="totalCount">0</span> | Ativos: <span id="activeCount">0</span> | Minimizados: <span id="minimizedCount">0</span>
+        </div>
+        <div id="postItContainer"></div>
+        <div id="minimizedContainer"></div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+    <script src="Postit.js"></script>
+</body>
+</html>
