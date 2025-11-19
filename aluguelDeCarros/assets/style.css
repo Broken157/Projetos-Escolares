@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #380861;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative; /* Adicionado para posicionar o botão */
+}
+
+/* Estilo para o botão de visualização */
+.view-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #380861;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+main {
+    max-width: 1100px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #380861;
+    border-bottom: 2px solid #380861;
+    padding-bottom: 10px;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 300px;
+    padding: 0 15px;
+}
+
+.full-width {
+    width: 100%;
+    padding: 0 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    background-color: #380861;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a1a9c;
+}
+
+button:active {
+    background-color: #2c064a;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #380861;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column;
+    }
+    .coluna {
+        padding: 0;
+    }
+}
