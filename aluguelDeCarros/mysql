@@ -1,0 +1,27 @@
+create database aluguel_carros;
+use aluguel_carros;
+
+create table vendas (
+    id int auto_increment primary key,
+    nome_cliente varchar(255) not null,
+    telefone_cliente varchar(20),
+    endereco_cliente varchar(255),
+    nascimento_cliente date,
+    profissao_cliente varchar(100),
+    cpf_cliente varchar(20) not null,
+    email_cliente varchar(255),
+    estado_cliente varchar(2),
+    estadocivil_cliente varchar(20),
+    salario_cliente decimal(10, 2),
+    modelo_carro varchar(100) not null,
+    placa_carro varchar(10) not null,
+    ano_carro int,
+    marca_carro varchar(50),
+    cor_carro varchar(30),
+    valor_venda decimal(10, 2),
+    nome_loja varchar(100),
+    endereco_loja varchar(255),
+    nome_atendente varchar(255),
+    id_atendente varchar(50),
+    data_venda timestamp default current_timestamp
+);
