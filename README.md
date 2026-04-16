@@ -4,7 +4,7 @@ Repositório para armazenar e documentar os projetos desenvolvidos durante as au
 
 ## 🚀 Sobre o Repositório
 
-Este espaço contém uma coleção de trabalhos e projetos práticos realizados em diversas disciplinas, abrangendo tecnologias de desenvolvimento web e Java. O objetivo é servir como um portfólio dos meus aprendizados e evolução.
+Este espaço contém uma coleção de trabalhos e projetos práticos realizados em diversas disciplinas, abrangendo tecnologias de desenvolvimento web, Java e banco de dados SQL. O objetivo é servir como um portfólio dos meus aprendizados e evolução.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -15,6 +15,7 @@ As principais tecnologias que você encontrará nos projetos são:
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## 📂 Estrutura de Pastas
 
@@ -29,6 +30,8 @@ Projetos-Escolares/
 │   ├── Calculadora.java
 │   ├── index.html
 │   └── style.css
+├── 📁 Banco de Dados - Queizy/
+│   └── queizy.sql
 └── ... outros projetos
 ```
 
@@ -40,6 +43,7 @@ Aqui estão alguns dos projetos incluídos neste repositório:
 * **postit**: Uma interface simples para criar notas, usando HTML e CSS.
 * **xadrez-tenis**: Projeto com interfaces visuais para temas de xadrez e tênis.
 * **Calculadora Basica em Java**: Calculadora em Java com operações básicas, fatorial, soma de intervalos e histórico de operações, além de uma página HTML/CSS simples de apresentação.
+* **Banco de Dados - Queizy**: Script SQL com criação do banco, tabelas relacionais, inserts em todas as tabelas e objetos de teste (views, procedures, function, trigger e índices).
 
 *(Esta lista pode ser atualizada conforme novos projetos são adicionados)*
 
@@ -69,6 +73,18 @@ A maioria dos projetos pode ser aberta diretamente no navegador (arquivos `.html
    ```sh
    java Calculadora
    ```
+
+### Projeto SQL (Banco de Dados - Queizy)
+1. Abra seu MySQL (Workbench ou terminal).
+2. Entre no banco:
+   ```sql
+   mysql -u root -p
+   ```
+3. Execute o script:
+   ```sql
+   source "caminho_completo/Banco de Dados - Queizy/queizy.sql";
+   ```
+4. Confira as tabelas e dados com os `select` no final do script.
 
 ---
 
