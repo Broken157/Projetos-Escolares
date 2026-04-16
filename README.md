@@ -27,9 +27,7 @@ Projetos-Escolares/
 ├── 📁 postit/
 ├── 📁 xadrez-tenis/
 ├── 📁 Calculadora Basica em Java/
-│   ├── Calculadora.java
-│   ├── index.html
-│   └── style.css
+│   └──  Calculadora.java
 ├── 📁 Banco de Dados - Queizy/
 │   └── queizy.sql
 └── ... outros projetos
@@ -42,7 +40,7 @@ Aqui estão alguns dos projetos incluídos neste repositório:
 * **aluguelDeCarros**: Uma aplicação em PHP para gerenciamento de aluguel de carros.
 * **postit**: Uma interface simples para criar notas, usando HTML e CSS.
 * **xadrez-tenis**: Projeto com interfaces visuais para temas de xadrez e tênis.
-* **Calculadora Basica em Java**: Calculadora em Java com operações básicas, fatorial, soma de intervalos e histórico de operações, além de uma página HTML/CSS simples de apresentação.
+* **Calculadora Basica em Java**: Calculadora em Java com operações básicas, fatorial, soma de intervalos e histórico de operações.
 * **Banco de Dados - Queizy**: Script SQL com criação do banco, tabelas relacionais, inserts em todas as tabelas e objetos de teste (views, procedures, function, trigger e índices).
 
 *(Esta lista pode ser atualizada conforme novos projetos são adicionados)*
@@ -73,6 +71,25 @@ A maioria dos projetos pode ser aberta diretamente no navegador (arquivos `.html
    ```sh
    java Calculadora
    ```
+### Se ocorrer erro de versão do Java
+
+Erro comum:
+`UnsupportedClassVersionError`
+
+Use:
+```bat
+javac --release 8 Calculadora.java
+java Calculadora
+```
+
+### Verificar versões instaladas
+
+```bat
+java -version
+javac -version
+where java
+where javac
+```
 
 ### Projeto SQL (Banco de Dados - Queizy)
 1. Abra seu MySQL (Workbench ou terminal).
