@@ -16,6 +16,7 @@ As principais tecnologias que você encontrará nos projetos são:
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/springboot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)
 
 ## 📂 Estrutura de Pastas
 
@@ -27,9 +28,15 @@ Projetos-Escolares/
 ├── 📁 postit/
 ├── 📁 xadrez-tenis/
 ├── 📁 Calculadora Basica em Java/
-│   └──  Calculadora.java
+│   ├── Calculadora.java
+│   ├── index.html
+│   └── style.css
 ├── 📁 Banco de Dados - Queizy/
 │   └── queizy.sql
+├── 📁 LocacaoEvento-SpringBoot/
+│   ├── src/
+│   ├── pom.xml
+│   └── ...arquivos do projeto
 └── ... outros projetos
 ```
 
@@ -40,8 +47,9 @@ Aqui estão alguns dos projetos incluídos neste repositório:
 * **aluguelDeCarros**: Uma aplicação em PHP para gerenciamento de aluguel de carros.
 * **postit**: Uma interface simples para criar notas, usando HTML e CSS.
 * **xadrez-tenis**: Projeto com interfaces visuais para temas de xadrez e tênis.
-* **Calculadora Basica em Java**: Calculadora em Java com operações básicas, fatorial, soma de intervalos e histórico de operações.
+* **Calculadora Basica em Java**: Calculadora em Java com operações básicas, fatorial, soma de intervalos e histórico de operações, além de uma página HTML/CSS simples de apresentação.
 * **Banco de Dados - Queizy**: Script SQL com criação do banco, tabelas relacionais, inserts em todas as tabelas e objetos de teste (views, procedures, function, trigger e índices).
+* **LocacaoEvento-SpringBoot**: Aplicação em Spring Boot (Java) com formulário HTML/Thymeleaf para simulação de locação de eventos, cálculo de valor base, desconto, valor final e classificação do tipo de evento.
 
 *(Esta lista pode ser atualizada conforme novos projetos são adicionados)*
 
@@ -71,25 +79,6 @@ A maioria dos projetos pode ser aberta diretamente no navegador (arquivos `.html
    ```sh
    java Calculadora
    ```
-### Se ocorrer erro de versão do Java
-
-Erro comum:
-`UnsupportedClassVersionError`
-
-Use:
-```bat
-javac --release 8 Calculadora.java
-java Calculadora
-```
-
-### Verificar versões instaladas
-
-```bat
-java -version
-javac -version
-where java
-where javac
-```
 
 ### Projeto SQL (Banco de Dados - Queizy)
 1. Abra seu MySQL (Workbench ou terminal).
@@ -102,6 +91,20 @@ where javac
    source "caminho_completo/Banco de Dados - Queizy/queizy.sql";
    ```
 4. Confira as tabelas e dados com os `select` no final do script.
+
+### Projeto Spring Boot (LocacaoEvento-SpringBoot)
+1. Abra o terminal na pasta do projeto:
+   ```sh
+   cd LocacaoEvento-SpringBoot
+   ```
+2. Execute com Maven:
+   ```sh
+   mvn spring-boot:run
+   ```
+3. Abra no navegador:
+   ```text
+   http://localhost:8080/locacao
+   ```
 
 ---
 
