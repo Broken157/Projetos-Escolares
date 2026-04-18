@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informação de locação</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Simulador de Locacao</h2>
+		<form action="/resultados" method="Post">
+		<div>
+		<label for="nome">Nome do cliente:</label>
+		<input type="text" id="nome" name="txtNome">
+		</br>
+		<label for="convidados">Quantidade de convidados:</label>
+		<input type="number" id="convidados" name="txtConvidados">
+		</br>
+		<label for="horas">Quantidade de horas:</label>
+		<input type="number" id="horas" name="txtHoras">
+		</br>
+		<label for="valor">Valor da hora:</label>
+		<input type="number" id="valor" name="txtValorH">
+		</br>
+		</div>
+		<button type="submit">Calcular locação</button>
+		</form>
+	</div>
+</body>
+</html>

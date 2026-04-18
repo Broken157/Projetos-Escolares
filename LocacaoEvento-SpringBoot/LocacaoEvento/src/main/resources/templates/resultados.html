@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="container">
+		    <h2>Resumo da Locação</h2>
+		    <br>
+		
+		    <ul>
+		        <li><strong>Nome do cliente:</strong><span th:text="${nome}"></span></li><br><br>
+		        <li><strong>Quantidade de convidados:</strong><span th:text="${QuantidadeConvidados}"></span></li><br><br>
+		        <li><strong>Valor Base:</strong>R$ <span th:text="${ValorBase}"></span></li><br><br>
+		        <li><strong>Percentual de desconto:</strong><span th:text="${desconto}"></span></li><br><br>
+		        <li><strong>Valor Final:</strong>R$ <span th:text="${ValorFinal}"></span></li><br><br>
+		        <li><strong>Categoria do evento:</strong><span th:text="${TipoE}"></span></li><br>
+		    </ul>
+		
+		    <a href="/locacao">Fazer nova Locação</a>
+		</div>
+	</body>
+</html>
