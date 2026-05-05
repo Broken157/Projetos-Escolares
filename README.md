@@ -28,9 +28,7 @@ Projetos-Escolares/
 ├── 📁 postit/
 ├── 📁 xadrez-tenis/
 ├── 📁 Calculadora Basica em Java/
-│   ├── Calculadora.java
-│   ├── index.html
-│   └── style.css
+│   └── Calculadora.java
 ├── 📁 Banco de Dados - Queizy/
 │   └── queizy.sql
 ├── 📁 LocacaoEvento-SpringBoot/
